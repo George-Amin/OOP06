@@ -15,42 +15,53 @@ namespace OOP06
                 Console.WriteLine("...................................................................");
             }
         }
+        static void Draw_2D_Shape(ITwoDrawDim _2DShape)
+        {
+            _2DShape.Draw();
+        }
+        static void Draw_3D_Shape(IThreeDrawDim _3DShape)
+        {
+            _3DShape.Draw();
+        }
         #endregion
         static void Main(string[] args)
         {
 
             #region OOP06 Abstraction Class V1
 
-            Rectangle rectangle = new Rectangle()
-            {
-                Dim01 = 10,
-                Dim02 = 20
-            };
-            processShape(rectangle);
-            //Console.WriteLine($"rectangle CalcArea {rectangle.CalcArea()}");
-            //Console.WriteLine($"rectangle Perimeter {rectangle.Perimeter}");
+            //Rectangle rectangle = new Rectangle()
+            //{
+            //    Dim01 = 10,
+            //    Dim02 = 20
+            //};
+            //processShape(rectangle);
+            ////Console.WriteLine($"rectangle CalcArea {rectangle.CalcArea()}");
+            ////Console.WriteLine($"rectangle Perimeter {rectangle.Perimeter}");
 
 
-            Square square = new Square(10);
-            processShape(square);
-            //Console.WriteLine($"Square CalcArea {square.CalcArea()}");
-            //Console.WriteLine($"Square Perimeter {square.Perimeter}");
+            //Square square = new Square(10);
+            //processShape(square);
+            ////Console.WriteLine($"Square CalcArea {square.CalcArea()}");
+            ////Console.WriteLine($"Square Perimeter {square.Perimeter}");
 
 
 
-            Circle circle = new Circle(10);
-            processShape(circle);
-            //Console.WriteLine($"Circle CalcArea {circle.CalcArea()}");
-            //Console.WriteLine($"Circle Perimeter {circle.Perimeter}");
+            //Circle circle = new Circle(10);
+            //processShape(circle);
+            ////Console.WriteLine($"Circle CalcArea {circle.CalcArea()}");
+            ////Console.WriteLine($"Circle Perimeter {circle.Perimeter}");
 
 
-            //Shape shapRef = new Circle(20);
+            ////Shape shapRef = new Circle(20);
 
-            //Console.WriteLine($"Circle CalcArea {shapRef.CalcArea()}");
-            //Console.WriteLine($"Circle Perimeter {shapRef.Perimeter}");
-            Shape s = new Circle(10);
-            processShape(s);
+            ////Console.WriteLine($"Circle CalcArea {shapRef.CalcArea()}");
+            ////Console.WriteLine($"Circle Perimeter {shapRef.Perimeter}");
+            //Shape s = new Circle(10);
+            //processShape(s);
             #endregion
+
+
+
         }
     }
 }
