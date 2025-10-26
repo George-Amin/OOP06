@@ -62,18 +62,30 @@ namespace OOP06
             #endregion
             // no V2
             #region V3
-            Utilty ut01 = new Utilty(10, 20);
-            Console.WriteLine(ut01.MterToCM(1.2));
+            //Utilty ut01 = new Utilty(10, 20);
+            ////Console.WriteLine(ut01.MterToCM(1.2));
 
-            ut01.X = 10;
-            ut01.Y = 20;
-            Console.WriteLine("After => " + ut01.MterToCM(1.2));
+            //ut01.X = 10;
+            //ut01.Y = 20;
+            ////Console.WriteLine("After => " + ut01.MterToCM(1.2));
 
 
 
-            Utilty ut02 = new Utilty(30, 40);
+            //Utilty ut02 = new Utilty(30, 40);
 
-            Console.WriteLine(ut02.MterToCM(2));
+            ////Console.WriteLine(ut02.MterToCM(2));
+
+            //Console.WriteLine(Utilty.CalcArea(2)); // non static method shold be called by object
+            //Utilty u03 = new Utilty(20, 2);
+            ////Console.WriteLine(u03.CalcArea(2));
+            //Console.WriteLine(Utilty.MterToCM(2));
+            
+            Utilty u04 = new Utilty(10,20);
+
+            //u04.Pi = 100;  // readonly property not allow to set value
+
+            Console.WriteLine(u04.Pi);
+
             #endregion
 
 

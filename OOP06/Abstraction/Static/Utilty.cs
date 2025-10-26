@@ -16,8 +16,23 @@ namespace OOP06.Abstraction.Static
             X = x;
             Y = y;
         }
+        //private static double Pi = 3.14;
+        private static readonly double pi = 3.14;
 
-        public double MterToCM(double _value)
+        public  double Pi
+        {
+            get { return pi; }
+            //set { pi = value; } // readonly cannot be assigned to (except in a constructor or a variable initializer)
+        }
+
+
+        public static double CalcArea(double _redius)
+        {
+            return pi * _redius * _redius;
+            //return Math.PI * Math.Pow(_redius, 2);  
+        }
+
+        public static double MterToCM(double _value)
         {
             return _value * 100;
         }
