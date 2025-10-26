@@ -1,4 +1,5 @@
 ﻿using OOP06.Abstraction;
+using OOP06.Abstraction.Static;
 
 namespace OOP06
 {
@@ -58,6 +59,21 @@ namespace OOP06
             ////Console.WriteLine($"Circle Perimeter {shapRef.Perimeter}");
             //Shape s = new Circle(10);
             //processShape(s);
+            #endregion
+            // no V2
+            #region V3
+            Utilty ut01 = new Utilty(10, 20);
+            Console.WriteLine(ut01.MterToCM(1.2));
+
+            ut01.X = 10;
+            ut01.Y = 20;
+            Console.WriteLine("After => " + ut01.MterToCM(1.2));
+
+
+
+            Utilty ut02 = new Utilty(30, 40);
+
+            Console.WriteLine(ut02.MterToCM(2));
             #endregion
 
 
