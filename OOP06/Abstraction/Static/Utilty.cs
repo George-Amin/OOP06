@@ -17,9 +17,9 @@ namespace OOP06.Abstraction.Static
             Y = y;
         }
         //private static double Pi = 3.14;
-        private static readonly double pi = 3.14;
+        private static readonly double pi = 3.14; // read only attribute
 
-        public  double Pi
+        public  double Pi // without set will be readonly property
         {
             get { return pi; }
             //set { pi = value; } // readonly cannot be assigned to (except in a constructor or a variable initializer)
