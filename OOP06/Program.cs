@@ -85,6 +85,9 @@ namespace OOP06
             //u04.Pi = 100;  // readonly property not allow to set value
 
             Console.WriteLine(u04.Pi);
+            // Console.WriteLine(u04.i); // static member should be called by class name not by object
+
+            Console.WriteLine(Utilty.i);
 
             #endregion
 
