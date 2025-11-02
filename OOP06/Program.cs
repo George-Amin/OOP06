@@ -60,7 +60,9 @@ namespace OOP06
             //processShape(s);
             #endregion
 
+            #region Seald
 
+            #endregion
 
         }
     }
