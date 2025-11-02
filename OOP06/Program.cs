@@ -79,19 +79,20 @@ namespace OOP06
             //Utilty u03 = new Utilty(20, 2);
             ////Console.WriteLine(u03.CalcArea(2));
             //Console.WriteLine(Utilty.MterToCM(2));
-            
-            Utilty u04 = new Utilty(10,20);
+
+            Utilty u04 = new Utilty(10, 20);
 
             //u04.Pi = 100;  // readonly property not allow to set value
 
-            Console.WriteLine(u04.Pi);
+            Console.WriteLine(u04.Pi); //  - > initialized by static constructor = 3.14159
             // Console.WriteLine(u04.i); // static member should be called by class name not by object
 
-            Console.WriteLine(Utilty.i);
-
+            Console.WriteLine(Utilty.i); // static member should be called by class name not by object
+            // Utilty.i = 200; // static member can be assigned in static method if it is not readonly => Invalid
             #endregion
 
-
+            //Test test = new Test(); 
+            
 
         }
     }

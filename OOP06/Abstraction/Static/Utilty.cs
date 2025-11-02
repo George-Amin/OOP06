@@ -11,6 +11,11 @@ namespace OOP06.Abstraction.Static
         public int X { get; set; }
         public int Y { get; set; }
 
+        static Utilty() // static constructor
+        {
+            // Use To Initialize Static Members Only
+            pi = 3.14159; // static readonly can be assigned in static constructor only
+        }
         public Utilty(int x, int y) // obj member constructor non static
         {
             X = x;
@@ -27,7 +32,7 @@ namespace OOP06.Abstraction.Static
             get { return pi; }
             //set { pi = value; } // readonly cannot be assigned to (except in a constructor or a variable initializer)
         }
-        public static int i = 1; // static variable can be assigned in static method if it is not readonly 
+        public static readonly int i = 1; // static variable can be assigned in static method if it is not readonly 
 
 
         public static double CalcArea(double _redius)
