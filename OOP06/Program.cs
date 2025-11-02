@@ -89,9 +89,9 @@ namespace OOP06
 
             Console.WriteLine(Utilty.i); // static member should be called by class name not by object
             // Utilty.i = 200; // static member can be assigned in static method if it is not readonly => Invalid
+            //Test test = new Test(); 
             #endregion
 
-            //Test test = new Test(); 
             
 
         }
