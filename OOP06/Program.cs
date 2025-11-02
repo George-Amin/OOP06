@@ -1,5 +1,6 @@
 ﻿using OOP06.Abstraction;
 using OOP06.Abstraction.Static;
+using OOP06.Partial;
 using OOP06.Sealed;
 
 namespace OOP06
@@ -95,25 +96,37 @@ namespace OOP06
 
             #region V5 Seald
 
-            Parent parent = new Parent();
-            parent.Salary = 5_000;
-            Console.WriteLine(parent.Salary);
-            parent.PrintNameOfClass();
+            //Parent parent = new Parent();
+            //parent.Salary = 5_000;
+            //Console.WriteLine(parent.Salary);
+            //parent.PrintNameOfClass();
 
-            Console.WriteLine(".........................");
-            Child child = new Child();  
-            child.Salary = 5000;
-            Console.WriteLine(child.Salary);
-            child.PrintNameOfClass();
+            //Console.WriteLine(".........................");
+            //Child child = new Child();  
+            //child.Salary = 5000;
+            //Console.WriteLine(child.Salary);
+            //child.PrintNameOfClass();
 
-            Console.WriteLine(".........................");
-            GrandChild grandChild = new GrandChild();
-            grandChild.Salary = 5000;
-            Console.WriteLine(grandChild.Salary);
-            grandChild.PrintNameOfClass();
+            //Console.WriteLine(".........................");
+            //GrandChild grandChild = new GrandChild();
+            //grandChild.Salary = 5000;
+            //Console.WriteLine(grandChild.Salary);
+            //grandChild.PrintNameOfClass();
 
 
             #endregion
+
+            #region Partial V6
+             
+            //Employee emp01 = new Employee();
+
+            //emp01.Id = 12;
+            //emp01.Name = "John Doe";
+            //emp01.Age = 30;
+            //emp01.DisplayEmployeeInfo(); 
+
+            #endregion
+
 
         }
     }
